@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fat Fellas | About</title>
+  <meta name="description" content="The Fat Fellas story — born on Drummond Street in 2022. London's most unapologetic burger joint." />
+  <link rel="icon" type="image/png" href="./assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400;1,700&family=Permanent+Marker&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo"><img src="./assets/logo.png" alt="Fat Fellas" width="52" height="52"/></a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="menu.html" class="nav-link">Menu</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="find-us.html" class="nav-link nav-book">Contact Us</a></li>
+        
+      </ul>
+      <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile navigation">
+    <ul role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="find-us.html" class="mobile-book">Contact Us</a></li>
+      
+    </ul>
+  </div>
+
+  <main>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about" class="about-section section-first">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-left">
+            <h2 class="about-headline fade-up">WE DON'T DO SMALL.<br>WE DON'T DO<br>BORING.</h2>
+            <div class="red-underline fade-up"></div>
+          </div>
+          <div class="about-right fade-up">
+            <p>Born on London's most legendary food street in 2022, Fat Fellas brought something new to Drummond Street. While the neighbours have been perfecting their craft since the 1970s, we rolled up with a smoking flat-top, a head full of reckless ideas, and an obsession with the perfect smash burger.</p>
+            <p>Every patty is hand-pressed fresh. Every sauce is made in-house. Every order leaves the kitchen with something to prove. This isn't a "gourmet dining experience." This is the kind of meal you'll talk about on the walk back to the tube — the kind that gets sauce on your shirt and a grin on your face.</p>
+            <p class="about-handwritten">Bold flavours. Fresh ingredients. No nonsense.</p>
+          </div>
+        </div>
+
+        <div class="since-badge" aria-label="Established since 2022">
+          <span class="badge-est">EST.</span>
+          <span class="badge-year">2022</span>
+          <span class="badge-london">LONDON</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== DRUMMOND STREET STRIP ===================== -->
+    <div class="drummond-strip" aria-label="Location feature">
+      <div class="drummond-inner">
+        <div class="drummond-left">
+          <p class="drummond-eyebrow">you'll find us on</p>
+          <h2 class="drummond-name">DRUMMOND STREET</h2>
+          <p class="drummond-sub">London's most iconic food street, NW1 — a pilgrimage for anyone serious about eating well.</p>
+        </div>
+        <div class="drummond-right">
+          <div class="drummond-stat">
+            <span class="stat-num">50+</span>
+            <span class="stat-label">years of food history on this street</span>
+          </div>
+          <div class="drummond-stat">
+            <span class="stat-num">#1</span>
+            <span class="stat-label">street for food lovers near Euston</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-logo-wrap">
+        <img src="./assets/logo.png" alt="Fat Fellas" class="footer-logo" width="80" height="80" loading="lazy"/>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4 class="footer-col-title">Navigate</h4>
+          <ul role="list">
+            <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="find-us.html" >Contact Us</a></li>
+            
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Opening Hours</h4>
+          <ul role="list">
+            <li>Mon – Sat: 11:00am – 11:00pm</li>
+            <li>Sunday: Closed</li>
+            <li class="footer-address">132 Drummond St, NW1 2PA</li>
+            <li><a href="tel:02072094534" style="color:#aaa;">020 7209 4534</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Follow the Sauce</h4>
+          <div class="footer-socials">
+            <a href="https://www.instagram.com/fatfellaslondon" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              <span>@fatfellaslondon</span>
+            </a>
+            <a href="https://www.tiktok.com/@fatfellaslondon" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="TikTok">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+              <span>@fatfellaslondon</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Fat Fellas London. All rights reserved.</p>
+        <p>Made with ❤️ in London</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

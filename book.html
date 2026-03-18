@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fat Fellas | Book a Table</title>
+  <meta name="description" content="Reserve your spot at Fat Fellas on Drummond Street. Walk-ins welcome, but why risk it? Book your table online." />
+  <link rel="icon" type="image/png" href="./assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400;1,700&family=Permanent+Marker&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- No external scripts needed — Web3Forms uses the browser's built-in fetch API -->
+</head>
+<body>
+
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo"><img src="./assets/logo.png" alt="Fat Fellas" width="52" height="52"/></a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="menu.html" class="nav-link">Menu</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="find-us.html" class="nav-link nav-book">Contact Us</a></li>
+        
+      </ul>
+      <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile navigation">
+    <ul role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="find-us.html" class="mobile-book">Contact Us</a></li>
+      
+    </ul>
+  </div>
+
+  <main>
+
+    <!-- ===================== BOOK A TABLE ===================== -->
+    <section id="book" class="booking-section sunburst-bg section-first">
+      <div class="container">
+        <div class="booking-inner">
+          <h2 class="booking-title fade-up">RESERVE YOUR SPOT</h2>
+          <p class="booking-sub fade-up">Walk-ins always welcome. But why risk it?</p>
+
+          <form class="booking-form fade-up" novalidate aria-label="Table reservation form">
+            <!--
+              ╔══════════════════════════════════════════════════════╗
+              ║  WEB3FORMS SETUP  (takes ~30 seconds, completely free) ║
+              ╠══════════════════════════════════════════════════════╣
+              ║  1. Go to https://web3forms.com                       ║
+              ║  2. Enter: hello@fatfellaslondon.com                  ║
+              ║  3. Click "Create Access Key"                         ║
+              ║  4. Copy the key and paste it in the value="" below   ║
+              ╚══════════════════════════════════════════════════════╝
+            -->
+            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+            <input type="hidden" name="subject" value="New Table Booking — Fat Fellas" />
+            <input type="hidden" name="from_name" value="Fat Fellas Bookings" />
+            <input type="hidden" name="redirect" value="false" />
+            <!-- Honeypot anti-spam field (keep hidden) -->
+            <input type="checkbox" name="botcheck" style="display:none;" tabindex="-1" autocomplete="off" />
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="+44 7700 000000" autocomplete="tel" />
+              </div>
+              <div class="form-group">
+                <label for="party">Party Size</label>
+                <select id="party" name="party" required>
+                  <option value="" disabled selected>How many?</option>
+                  <option value="1">1 person</option>
+                  <option value="2">2 people</option>
+                  <option value="3">3 people</option>
+                  <option value="4">4 people</option>
+                  <option value="5">5 people</option>
+                  <option value="6">6 people</option>
+                  <option value="7+">7+ people</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required />
+              </div>
+              <div class="form-group">
+                <label for="time">Time</label>
+                <select id="time" name="time" required>
+                  <option value="" disabled selected>Choose time</option>
+                  <option>11:00 AM</option>
+                  <option>11:30 AM</option>
+                  <option>12:00 PM</option>
+                  <option>12:30 PM</option>
+                  <option>1:00 PM</option>
+                  <option>1:30 PM</option>
+                  <option>2:00 PM</option>
+                  <option>5:00 PM</option>
+                  <option>5:30 PM</option>
+                  <option>6:00 PM</option>
+                  <option>6:30 PM</option>
+                  <option>7:00 PM</option>
+                  <option>7:30 PM</option>
+                  <option>8:00 PM</option>
+                  <option>8:30 PM</option>
+                  <option>9:00 PM</option>
+                  <option>9:30 PM</option>
+                  <option>10:00 PM</option>
+                  <option>10:30 PM</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group form-group-full">
+              <label for="message">Anything else? (dietary needs, special occasions…)</label>
+              <textarea id="message" name="message" placeholder="Let us know..." rows="3"></textarea>
+            </div>
+            <div class="form-submit-wrap">
+              <button type="submit" class="btn btn-red btn-xl">LOCK IT IN &rarr;</button>
+            </div>
+          </form>
+
+          <div class="form-success" aria-live="polite" role="status">
+            <div class="success-icon" aria-hidden="true">✓</div>
+            <h3>YOU'RE ALL SET!</h3>
+            <p>We'll see you soon on Drummond Street. Get ready for something proper.</p>
+            <p class="success-sub">A confirmation has been sent to your email.</p>
+            <button class="btn btn-red btn-xl" id="book-again" style="margin-top:24px;">BOOK AGAIN &rarr;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-logo-wrap">
+        <img src="./assets/logo.png" alt="Fat Fellas" class="footer-logo" width="80" height="80" loading="lazy"/>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4 class="footer-col-title">Navigate</h4>
+          <ul role="list">
+            <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="find-us.html" >Contact Us</a></li>
+            
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Opening Hours</h4>
+          <ul role="list">
+            <li>Mon – Sat: 11:00am – 11:00pm</li>
+            <li>Sunday: Closed</li>
+            <li class="footer-address">132 Drummond St, NW1 2PA</li>
+            <li><a href="tel:02072094534" style="color:#aaa;">020 7209 4534</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Follow the Sauce</h4>
+          <div class="footer-socials">
+            <a href="https://www.instagram.com/fatfellaslondon" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              <span>@fatfellaslondon</span>
+            </a>
+            <a href="https://www.tiktok.com/@fatfellaslondon" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="TikTok">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+              <span>@fatfellaslondon</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Fat Fellas London. All rights reserved.</p>
+        <p>Made with ❤️ in London</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+/* ============================================================
+   Fat Fellas Booking Form — powered by Web3Forms
+   ─────────────────────────────────────────────────────────────
+   SETUP (30 seconds, completely free):
+   1. Go to https://web3forms.com
+   2. Enter:  hello@fatfellaslondon.com
+   3. Click "Create Access Key"
+   4. Copy the key and replace YOUR_ACCESS_KEY_HERE in the
+      hidden input at the top of the form above.
+   That's it — no account, no dashboard, no credit card.
+   Bookings land directly in your inbox.
+   ============================================================ */
+
+document.addEventListener('DOMContentLoaded', () => {
+  const form       = document.querySelector('.booking-form');
+  const successBox = document.querySelector('.form-success');
+  const bookAgain  = document.getElementById('book-again');
+
+  if (!form) return;
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    /* ---- Validate required fields ---- */
+    let valid = true;
+    form.querySelectorAll('[required]').forEach(field => {
+      if (!field.value.trim()) {
+        field.style.borderColor = '#C8181A';
+        if (valid) field.focus();
+        valid = false;
+      } else {
+        field.style.borderColor = '';
+      }
+    });
+    if (!valid) return;
+
+    /* ---- Disable submit while sending ---- */
+    const submitBtn = form.querySelector('[type="submit"]');
+    const origText  = submitBtn.textContent;
+    submitBtn.textContent = 'SENDING\u2026';
+    submitBtn.disabled = true;
+
+    /* ---- Add reply-to so emails reply directly to the customer ---- */
+    const replyInput = form.querySelector('[name="replyto"]') || document.createElement('input');
+    replyInput.type  = 'hidden';
+    replyInput.name  = 'replyto';
+    replyInput.value = form.email.value.trim();
+    if (!form.querySelector('[name="replyto"]')) form.appendChild(replyInput);
+
+    try {
+      const data = new FormData(form);
+      const res  = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body:   data
+      });
+      const json = await res.json();
+
+      if (json.success) {
+        /* ---- Animate form out, success state in ---- */
+        form.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+        form.style.opacity    = '0';
+        form.style.transform  = 'translateY(-16px)';
+        setTimeout(() => {
+          form.style.display = 'none';
+          successBox.style.display = 'block';
+          successBox.classList.add('visible');
+          successBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }, 420);
+      } else {
+        throw new Error(json.message || 'Submission failed');
+      }
+
+    } catch (err) {
+      console.error('Booking error:', err);
+      submitBtn.textContent = origText;
+      submitBtn.disabled    = false;
+
+      /* ---- User-friendly error banner ---- */
+      let errBanner = form.querySelector('.form-error-msg');
+      if (!errBanner) {
+        errBanner = document.createElement('p');
+        errBanner.className = 'form-error-msg';
+        errBanner.style.cssText = 'color:#C8181A;font-family:Nunito,sans-serif;font-size:.95rem;font-weight:700;margin-top:12px;text-align:center;';
+        form.querySelector('.form-submit-wrap').after(errBanner);
+      }
+      errBanner.textContent = 'Something went wrong — please call us on 020 7209 4534 or try again.';
+    }
+  });
+
+  /* ---- Clear red borders on input ---- */
+  form.querySelectorAll('input, select, textarea').forEach(f => {
+    f.addEventListener('input', () => { f.style.borderColor = ''; });
+  });
+
+  /* ---- "Book Again" resets the form ---- */
+  if (bookAgain) {
+    bookAgain.addEventListener('click', () => {
+      successBox.style.display = 'none';
+      successBox.classList.remove('visible');
+      form.style.display    = 'block';
+      form.style.opacity    = '1';
+      form.style.transform  = '';
+      form.reset();
+      const btn = form.querySelector('[type="submit"]');
+      if (btn) { btn.textContent = 'LOCK IT IN \u2192'; btn.disabled = false; }
+      form.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  }
+});
+  </script>
+  <script src="main.js"></script>
+</body>
+</html>
