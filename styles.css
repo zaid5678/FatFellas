@@ -856,10 +856,10 @@ h1, h2, h3, h4 {
 }
 
 .item-name {
-  font-family: 'Nunito', sans-serif;
-  font-size: 0.95rem;
+  font-family: 'Bangers', cursive;
+  font-size: 1.05rem;
   color: var(--cream);
-  font-weight: 600;
+  letter-spacing: 0.04em;
   flex: 1;
 }
 
