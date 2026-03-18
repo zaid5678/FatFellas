@@ -2440,4 +2440,5 @@ body.cookie-visible { padding-bottom: 80px; }
 .touch-rows { display: flex; flex-direction: column; gap: 4px; max-width: 520px; margin: 0 auto; }
 .touch-row { display: flex; align-items: center; gap: 20px; padding: 20px 24px; background: rgba(255,255,255,0.05); border-radius: 10px; color: var(--white); font-family: 'Nunito', sans-serif; font-size: 1.05rem; font-weight: 700; transition: background 0.2s; }
 .touch-row:hover { background: rgba(200,24,26,0.25); }
-.touch-icon { font-size: 1.6rem; flex-shrink: 0; }
+.touch-icon { font-size: 1.6rem; flex-shrink: 0; display: flex; align-items: center; }
+.touch-icon svg { width: 26px; height: 26px; }
