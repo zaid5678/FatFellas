@@ -1941,6 +1941,7 @@ h1, h2, h3, h4 {
 .review-btn:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0,0,0,0.45); }
 .review-btn--ta { background: #fff; color: #111; }
 .review-btn--g  { background: #fff; color: #111; }
+.review-btn-logo { width: 32px; height: 32px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
 
 /* ============================================
    RESPONSIVE — TABLET (≤ 900px)
